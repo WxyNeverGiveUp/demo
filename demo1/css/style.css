@@ -1,0 +1,214 @@
+/*__clearfix*/
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+/*clearfixEnd*/
+
+html,body {
+  font-size:14px;
+  height:100%;
+  background-color: #2d2b3a;
+  font: 12px/1.5 "微软雅黑", arial, \5b8b\4f53, sans-serif;
+}
+#wrap{
+  height: 100%;
+}
+.hover{
+  opacity: .8;
+}
+.flex-wrap{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+ }
+.flex-con{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.flex-vertical{
+  -webkit-box-orient:
+  vertical;-webkit-flex-flow:
+  column;flex-flow: column;
+}
+
+.border-t,
+.border-b{
+  position:relative;
+}
+.border-b{
+  position: relative;
+  height: 65px;
+  background: url(../image/aui-icon-question.png) no-repeat 57%;
+  line-height: 65px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+.question{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.icon{
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  margin: 10px 5px 0 0;
+}
+.scan{
+  right: 60px;
+  background: url(../image/scan.png) no-repeat center;
+}
+.more{
+  right: 20px;
+  background: url(../image/more.png) no-repeat center;
+}
+
+
+
+.nav li{
+  float: left;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+.nav li a{
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  line-height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nav li:nth-child(1) a{
+  background-image: url(../image/chart.png);
+  background-color: #f79b22;
+}
+.nav li:nth-child(2) a{
+  background-image: url(../image/building.png);
+  background-color: #516bcf;
+}
+.nav li:nth-child(3) a{
+  background-image: url(../image/curve.png);
+  background-color: #37c7b8;
+  transform:rotate(266deg);
+}
+.nav li:nth-child(4) a{
+  background-image: url(../image/people.png);
+  background-color: #436eeb;
+}
+.nav li:nth-child(5) a{
+  background-image: url(../image/list.png);
+  background-color: #353245;
+}
+/*module*/
+.module{
+  width: 90%;
+  margin: 15px 2%;
+  padding: 3%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.module-title{
+  margin: 5px 0 30px 0;
+  padding-left: 35px;
+  font-size: 24px;
+  line-height: 32px;
+  background-repeat: no-repeat;
+}
+/*moduleEND*/
+/*销售简报*/
+.bulletin h1{
+  color: #93c78f;
+  background-image: url(../image/book.png);
+}
+.bulletin .part{
+  display: inline-block;
+  width: 49%;
+  margin: 5px 0;
+}
+.bulletin dt{
+  padding-left: 70px;
+  font-size: 18px;
+}
+.bulletin p{
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+.bulletin p .bigger{
+  font-size: 40px;
+}
+.bulletin .img-box{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding-right: 10px;
+  border-right: 1px solid #e3f0e3;
+}
+.img-box img{
+  width: 99%;
+  height: 99%;
+}
+/*销售简报END*/
+/*遗忘客户提醒*/
+.remind h1{
+  color: #fac25a;
+  background-image: url(../image/clock.png);
+}
+.remind .number{
+  color: #c7c7c7;
+}
+.last-time{
+  display: inline-block;;
+  width: 50%;
+  font-size: 20px;
+}
+.timing{
+  display: block;
+}
+.time-difference{
+  display: inline-block;
+  width: 49%;
+  font-size: 18px;
+}
+.time-difference span{
+  font-size: 40px;
+  color: #fac25a;
+}
+/*遗忘客户提醒END*/
+/*footer*/
+#footer{
+  background-color: #f2f2f2;
+}
+#footer ul li{
+  padding-top: 36px;
+  padding-bottom: 4px;
+  background: url() no-repeat center 2px;
+  background-size: auto 30px;
+  text-align: center;
+}
+#footer ul li.active{
+  color: #ea9518;
+}
+#footer ul li:nth-child(1){
+  background-image: url(../image/message.png);
+}
+#footer ul li:nth-child(2){
+  background-image: url(../image/text-2.png);
+}
+#footer ul li:nth-child(3){
+  background-image: url(../image/pie-chart.png);
+}
+#footer ul li:nth-child(4){
+  background-image: url(../image/app.png);
+}
+#footer ul li:nth-child(5){
+  background-image: url(../image/people_fill.png);
+}
+.flex-con{
+  overflow: auto
+}
+/*footerEND*/

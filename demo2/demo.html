@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>多选下拉框</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="myApp">
+		<multiple-select v-bind:optionsdata="multiple.originOptions" v-bind:selecteddata="multiple.selectedList" v-on:selected="multipleCallback"></multiple-select>
+	</div>
+	<script src="js/base/vue.min.js"></script> 
+	<script src="js/script.js"></script>
+	<script type="text/javascript">
+
+	var myController = new Vue({
+		el: '.myApp',
+		data: {
+	        multiple: {
+	            originOptions: [{"id":"1","name":"lemon"},{"id":"2","name":"mike"},{"id":"3","name":"lara"},{"id":"4","name":"zoe"},{"id":"5","name":"steve"},{"id":"6","name":"nolan"}],
+	            selectedList: [{"id":"1","name":"lemon"},{"id":"3","name":"lara"}]
+	        }
+		},
+		methods: {
+	        multipleCallback: function(data){
+	            this.multiple.selectedList = data;
+	        }
+	    }
+	});
+
+	</script>
+</body>
+</html>
